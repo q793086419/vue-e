@@ -7,7 +7,20 @@ import goods from './components/goods/goods.vue';
 import ratings from './components/ratings/ratings.vue';
 import seller from './components/seller/seller.vue';
 // Vue.config.productionTip = false;
+import './common/style/index.less';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+
 Vue.use(VueRouter);
+Vue.use(VueAxios, axios);
+/* axios */
+// Vue.axios.get(api).then((response) => {
+//   console.log(response.data);
+// });
+// this.axios.get(api).then((response) => {
+//   console.log(response.data);
+// });
+/* axios END */
 
 const routes = [
   { path: '/goods', component: goods },
